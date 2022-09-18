@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="clone, tailwindcss, 'marn htet zan'">
+		<meta name="author" content="Marn Htet Zan">
+		<meta name="description" content="Image card clone from tailwind website">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet">
+		<script>
+			tailwind.config = {
+			theme: {
+				container: {
+					center: true,
+					padding: '1.5rem',
+				},
+				screens: {
+					xs: "568px",
+					sm: "640px",
+					md: "768px",
+					lg: "992px",
+					xl: "1080px",
+					xxl: "1440px",
+					xxxl: "2140px",
+				},
+				fontFamily: {
+					lora: ['Lora', 'serif'],
+					mont: ['Montserrat', 'sans-serif']
+				},
+				borderWidth: {
+					DEFAULT: '1px',
+					'none': '0px',
+					'1': '1px',
+					'2': '2px',
+					'3': '3px',
+					'4': '4px',
+					'5': '5px',
+					'6': '6px',
+					'7': '7px',
+					'8': '8px',
+					'9': '9px',
+					'10': '10px',
+				},
+				outlineWidth: {
+					'0': '0px',
+					'1': '1px',
+					'2': '2px',
+					'3': '3px',
+					'4': '4px',
+					'5': '5px',
+					'6': '6px',
+					'7': '7px',
+					'8': '8px',
+					'9': '9px',
+					'10': '10px',
+				},
+			}
+		}
+		</script>
+		<style type="text/tailwindcss">
+		</style>
+		<title>Image Card</title>
+	</head>
+
+	<body>
+		<figure class="md:flex max-w-3xl rounded-xl md:rounded-none shadow-2xl mt-16 p-4 md:p-0 mx-8">
+			<img src="./Images/dayan.jpg" alt="Dayan" class="w-24 h-24 mx-auto object-center object-cover rounded-full md:rounded-none md:h-auto md:w-52" width="384" height="512">
+			<div class="text-center px-16 mt-8">
+				<blockquote>
+					<p class="font-normal text-2xl font-lora">
+						“ Tailwind CSS is the only framework that I've seen scale on large teams. It’s easy to customize, adapts to any design, and the build size is tiny. ”
+					</p>
+				</blockquote>
+				<figcaption class="font-medium my-4 lg:my-8">
+					<div class="text-xl text-cyan-500/70">
+						Sarah Dayan
+					</div>
+					<div class="text-xl text-slate-600">
+						Staff Engineer, Algolia
+					</div>
+				</figcaption>
+			</div>
+		</figure>
+	</body>
+
+</html>
